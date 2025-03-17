@@ -1,0 +1,490 @@
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 900;
+    src: url(pre/Pretendard-Black.woff) format('woff');
+}
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 800;
+    src: url(pre/Pretendard-ExtraBold.woff) format('woff');
+}
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 700;
+    src: url(pre/Pretendard-Bold.woff) format('woff');
+}
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 600;
+    src: url(pre/Pretendard-SemiBold.woff) format('woff');
+}
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 500;
+    src: url(pre/Pretendard-Medium.woff) format('woff');
+}
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 400;
+    src: url(pre/Pretendard-Regular.woff) format('woff');
+}
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 300;
+    src: url(pre/Pretendard-Light.woff) format('woff');
+}
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 200;
+    src: url(pre/Pretendard-ExtraLight.woff) format('woff');
+}
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 100;
+    src: url(pre/Pretendard-Thin.woff) format('woff');
+}
+
+body{
+    font-family: "Pretendard";
+}
+
+/* header */
+.nav{
+    display: flex;
+    width: 1774px;
+    margin: 0 auto;
+}
+.gnb>ul{
+    display: flex;
+}
+.nav-icon>ul{
+    display: flex;
+}
+.logo{
+    font-size: 18px;
+    font-weight: 600;
+}
+.gnb a{
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    /*letter-spacing %값 적용 불가능, em 또는 px 적용*/
+}
+.logo_item{
+    margin-right: 164px;
+}
+.gnb li{
+    margin-right: 48px;
+}
+.gnb li:last-child{
+    margin-right: 0;
+}
+.nav-icon{
+    margin-left: 164px;
+}
+header{
+    padding: 23px 0;
+}
+.nav-icon li:first-child{
+    margin-right: 11px;
+}
+
+/* slider section */
+.content_01{
+    width: 100%;
+    height: 670px;
+    background: url('../images/main.png');
+    /*위 ".." 동일 폴더 내 폴더명 묵음 처리 (., .. 2가지이며 css 내 불러올 경우 사용)*/
+    background-repeat: no-repeat;
+    /*background-repeat 이미지 사이즈가 정확하지 않을 경우 동일 이미지 사이즈 내 반복 현상*/
+    background-size: cover;
+    /*cover: 기존 사이즈에 맞추어 이미지 덮어씌우기, 그 외 %(ex. 가로 50% 세로 60%)와 아래와 같은 top center등 지정 가능*/
+    background-position: center right;
+    /*9등분하여 top left, center center 등과 같이 이미지의 노출 기준점 조정*/
+}
+.slider>h2{
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 5px;
+}
+.slider>p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 56px;
+}
+.slider>button{
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    padding: 14px 16px;
+}
+
+.slider{
+    display: flex;
+    flex-direction: column;
+    /*column: 아래 정렬, column-reverse: 기존 정렬 위아래 반전*/
+    align-items: flex-start;
+    height: 670px;
+    justify-content: center;
+    /*align-items: 가로 정렬, justify-conten: 세로 정렬(height 값 지정 필수)*/
+    margin-left: 201px;
+}
+
+/* swiper section */
+.sec02{
+    padding: 200px 0 100px;
+}
+.swiper{
+    width: 100%;
+    height: 500px;
+    background: #868686;
+}
+.sec02__title{
+    text-align: center;
+}
+.sec02 h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 25px;
+}
+.sec02 p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #767676;
+    margin-bottom: 80px;
+}
+
+/* item section */
+.sec03{
+    padding: 100px 0;
+}
+.sec03__title{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.sec03 h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 25px;
+}
+.sec03 p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #767676;
+}
+.item{
+    width: 1316px;
+    margin: 0 auto;
+}
+.item_box{
+    float: left;
+    width: 432px;
+}
+.item_box>div{
+    width: 100%;
+    height: 280px;
+    background-color: #868686;
+    margin-bottom: 27px;
+}
+.margin-10{
+    margin: 0 10px;
+}
+.clearfix{
+    clear: both;
+}
+
+/* image section */
+.sec04{
+    padding: 100px 0 0 0;
+}
+.image{
+    text-align: center;
+}
+.sec04 h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 25px;
+}
+.sec04 p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #767676;
+    margin-bottom: 80px;
+}
+.image div:last-child{
+    width: 1316px;
+    height: 450px;
+    background-color: #868686;
+    margin: 0 auto;
+}
+
+/* flex section */
+/* common (공통 규칙_미리 생성 후, html 작성 시 class명 대입) */
+.d-flex{
+    display: flex;
+}
+.d-flex-s{
+    display: flex;
+    justify-content: space-between;
+}
+
+img{
+    width: 100%;
+}
+
+.w-1316{
+    width: 1316px;
+    margin: auto;
+}
+.w-700{
+    width: 700px;
+}
+.w-650{
+    width: 650px;
+}
+.w-550{
+    width: 550px;
+}
+.w-408{
+    width: 408px;
+}
+
+.font-12{
+    font-size: 12px;
+}
+.font-16{
+    font-size: 16px;
+}
+.font-24{
+    font-size: 24px;
+}
+.font-32{
+    font-size: 32px;
+}
+.font-36{
+    font-size: 36px;
+}
+.font-500{
+    font-weight: 500;
+}
+.font-600{
+    font-weight: 600;
+}
+
+.p-color{
+    color: #767676;
+}
+
+h2{
+    line-height: 140%;
+    letter-spacing: -.025em;
+}
+h3{
+    line-height: 140%;
+    letter-spacing: -.025em;
+}
+p{
+    line-height: 140%;
+    letter-spacing: -.025em;
+}
+.t-align{
+    text-align: center;
+}
+
+.m-l-20{
+    margin-left: 20px;
+}
+.mb-25{
+    margin-bottom: 25px;
+}
+.mb-80{
+    margin-bottom: 80px;
+}
+.mb-82{
+    margin-bottom: 82px;
+}
+.mb-100{
+    margin-bottom: 100px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.mt-80{
+    margin-top: 80px;
+}
+.mt-100{
+    margin-top: 100px;
+}
+.pt-100{
+    padding-top: 100px;
+}
+.pb-100{
+    padding-bottom: 100px;
+}
+
+/* over-flow section */
+
+/* overflow = 지정한 사이즈 내 콘텐츠가 넘치지 않도록 제한
+overflow : 전체, overflow-x : 가로축, overflow-y : 세로축 */
+
+.sec08{
+    width: 1903px;
+    overflow: hidden;
+}
+
+.over-f-h{
+    width: 3700px;
+    margin-left: -150px;
+}
+
+.box{
+    width: 352px;
+    height: 250px;
+    margin: 0 10px;
+}
+
+.bg1{
+    background: url('../images/hello-1.png');
+}
+.bg2{
+    background: url('../images/hello-2.png');
+}
+.bg3{
+    background: url('../images/hello-3.png');
+}
+.bg4{
+    background: url('../images/hello-4.png');
+}
+.bg5{
+    background: url('../images/hello-5.png');
+}
+.bg6{
+    background: url('../images/hello-9.png');
+}
+.bg7{
+    background: url('../images/hello-6.png');
+}
+
+
+/* t-content section */
+.aside-content{
+    padding: 20px 0 60px 0;
+    /* border-top: 1px solid #ccc; >> outside 기준 */
+    box-shadow: inset 0px 1px #ccc;
+    /* box-shadow: x축 y축 블러(묵음 가능) 컬러 (ex_윗 라인. box-shadow: 0px -1px 0px #ccc;)
+    두께 조정 필요 시, inset=inside (ex. box-shadow: inset 0px 1px #ccc;)
+    ,를 통해서 중첩 가능 (ex. 3px 3px red, -1em 0 0.4em olive, -10px -10px black) */
+}
+.left-title{
+    width: 328px;
+}
+.right-title{
+    width: 458px;
+}
+
+/* flat-design section */
+.f-color{
+    color: #fff;
+}
+
+.flat-6__content{
+    width: 648px;
+    height: 315px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* flex > column > flex-end */
+}
+.flat-6__content p{
+    margin: 25px 0 20px 0;
+}
+.bg-flat-1{
+    background: no-repeat url('../images/flat-1.png');
+    background-position: center;
+    background-size: cover;
+    /* no-repeat: 이미지 중복 제거, color까지 ,를 통해 함께 작성 그 외 속성값은
+    enter > background-position: center; enter > background-size: cover;
+    위와 같이 작성하여 이후 별도로 조정할 수 있도록 함. */
+}
+.bg-flat-2{
+    background: no-repeat url('../images/flat-2.png');
+    background-position: center;
+    background-size: cover;
+}
+.flex-column{
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flat-2{
+    margin: 0 10px;
+}
+.flat-2__content{
+    width: 324px;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.flat-2__content p{
+    margin: 25px 0 20px 0;
+}
+.bg-flat-3{
+    background: no-repeat url('../images/flat-3.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.flat-4__content{
+    width: 324px;
+    height: 205.33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.flat-4__content p{
+    margin: 25px 0 20px 0;
+}
+.bg-flat-4{
+    background: no-repeat url('../images/flat-4.png');
+    background-position: center;
+    background-size: cover;
+}
+.bg-flat-5{
+    background: no-repeat url('../images/flat-5.png');
+    background-position: center;
+    background-size: cover;
+}
+.bg-flat-6{
+    background: no-repeat url('../images/flat-6.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.flat-6__content h3{
+    padding: 0 20px;
+}
+.flat-6__content p{
+    padding: 0 20px;
+}
+.flat-2__content h3{
+    padding: 0 20px;
+}
+.flat-2__content p{
+    padding: 0 20px;
+}
+.flat-4__content h3{
+    padding: 0 20px;
+}
+.flat-4__content p{
+    padding: 0 20px;
+}
